@@ -25,6 +25,14 @@ angular.module('NoteWrangler').config(['$routeProvider', function($routeProvider
         controller: 'NotesEditController'
     })
 
+    .when('/users', {
+        templateUrl: "assets/templates/users/index.html",
+        controller: 'UsersIndexController'
+    })
 
+    .when('/users', {
+        templateUrl: "assets/templates/users/show.html",
+        controller: 'UsersShowController'
+    })
 
 }]);
