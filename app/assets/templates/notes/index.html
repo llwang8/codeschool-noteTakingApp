@@ -3,5 +3,6 @@
     <div ng-repeat="note in notes" class="note col-sm-6">
         <h2 ><a ng-href="#/notes/{{note.id}}">{{note.title}}</a></h2><!--ng-href doesn't till view is rendered-->
         <p>{{note.description}}</p>
+        <P><span class="label label-info"></span></p>
     </div>
 </div>
