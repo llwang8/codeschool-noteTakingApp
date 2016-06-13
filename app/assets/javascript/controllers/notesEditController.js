@@ -10,7 +10,6 @@ angular.module('NoteWrangler')
 
         note.$update().finally(function(){
             $scope.isSubmitting = false;
-
             $location.path("/notes/" + note.id);
         });
     }
